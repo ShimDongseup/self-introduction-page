@@ -27,5 +27,6 @@ window.addEventListener('scroll', _.throttle(function(){ //스크롤이벤트 �
 new Swiper('.background .swiper', {
   direction: 'vertical',
   autoplay: true,
-  loop: true
+  loop: true,
+  speed: 1500
 });
