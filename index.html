@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🖥 Dongseup Shim</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./main.css">
+
+  <!-- 스크롤 이벤트제어 하는 라이브러리 lodash 호출 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 자바스크립트 애니메이션 라이브러리 gsap 호출 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- swiper를 사용하기위한 라이브러리 호출 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  
+  <script defer src="./main.js"></script>
+</head>
+<body>
+ <!-- Header section -->
+  <header>
+    <div class="inner">
+      <a href= "./index.html"><h1> Dongseup Shim </h1></a>
+      <nav class = "menu">
+        <ul>
+          <li><a href="./Profile/index.html">Profile</a></li>
+          <li><a href="./project/index.html">Project</a></li>
+          <li><a href="./Contact/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="badges">
+        <div class="badge">
+          <a href="./Profile/index.html">
+            <img src="./images/badge_img1.png" alt="Badge" >
+          </a>  
+        </div>
+        <div class="badge">
+          <a href="./Contact/index.html">
+            <img src="./images/badge_img2.png" alt="Badge" >
+          </a>
+        </div>
+    </div>
+  </header>   
+
+
+  <!--background Fade-in -->
+  <div class = "background">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src ="./images/main_swiper_img1.JPG" alt="background img" class ="swiper-img" >
+        </div>
+        <div class="swiper-slide">
+          <img src ="./images/main_swiper_img2.JPG" alt="background img" class ="swiper-img" >
+        </div>
+        <div class="swiper-slide">
+          <img src ="./images/main_swiper_img3.JPG" alt="background img" class ="swiper-img" >
+        </div>
+        <div class="swiper-slide">
+          <img src ="./images/main_swiper_img4.JPG" alt="background img" class ="swiper-img" >
+        </div>
+      </div>
+    </div>
+    <!-- <img src ="./images/main_img1.JPG" alt="background img" class ="background-img" > -->
+    <div class = "message">
+      <p> Photo by Dongseup<br><br>Nice to meet you :)<br><br>⬇️⬇️⬇️ If you want to see more pictures of me, please scroll down the page ⬇️⬇️⬇️</p>
+    </div>
+    <img src ="./images/main_img1.JPG" alt="background img" class ="background-img" >
+    <img src ="./images/main_img2.JPG" alt="background img" class ="background-img" >
+    <img src ="./images/main_img3.JPG" alt="background img" class ="background-img" >
+
+  </div>
+
+</body>
+</html>
