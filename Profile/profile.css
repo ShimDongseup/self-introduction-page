@@ -14,13 +14,18 @@ to {
 
 /* Header */
 
-#header {
+header {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight:light;
   color:black;
 }
-#header a:first-child{
+header .inner{
+  width: 100vw;
+  height: 200px;
+  margin-top: 40px;
+}
+header a:first-child{
   text-decoration: none;
 }
 a h1 {
@@ -34,24 +39,17 @@ a h1:hover{
   scale: 1.05;
 }
 
-/* menu */
+/* menu bar */
 
 .menu li {
   margin: 100px;
 }
-.menu li:nth-child(1) a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-.menu li:nth-child(2) a {
+
+.menu li a {
   color: gray;
   text-decoration: none;
 }
-.menu li:nth-child(3) a {
-  color: gray;
-  text-decoration: none;
-}
+
 .menu li a:hover {
   color:black;
 }
@@ -73,8 +71,6 @@ a h1:hover{
   padding-top: 30px;
 }
 
- 
-
 .profile {
   position: relative;
   width: 50%;
@@ -83,31 +79,34 @@ a h1:hover{
   /*float= "left"를 사용하여 나눈다. */
 }
 
-
+.profile_text {
+  border-left: 1px solid gray;
+  padding-bottom: 200px;
+}
 
 .profile img {
   display: block;
   margin: auto;
-  margin-top: 100px;
-  width: auto;
-  height: 350px;
+  margin-top: 50px;
+  width: 20vw;
+  height: 26wv;
   overflow: auto;
   object-fit: fill;
   text-align: center;
   padding-top: 0;
   padding-right: 150px;
-  border-right: 1px solid gray;
 }
 
 .profile_text_name {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2.5vw;
   font-weight: 400;
   padding-top: 120px;
   text-align: center;
 }
 
 .profile_text_description {
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight:310px;
   margin-top: 30px;
   margin-left: auto;
@@ -116,7 +115,7 @@ a h1:hover{
   color: #282727d5;
 }
 HL{
-  font-size: 22px;
+  font-size: 2vw;
   font-weight: 900;
   background: linear-gradient(to top, #FFE400 50%, transparent 50%);
 }
